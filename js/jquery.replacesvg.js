@@ -3,7 +3,7 @@
  *
  * @modified  2013/05/08
  * @requires  jQuery 1.7.x or later
- * @version   1.0.4
+ * @version   1.0.5
  * @author    FiNGAHOLiC
  * @link      https://github.com/FiNGAHOLiC/jquery.replacesvg
  * @license   The MIT License
@@ -14,7 +14,7 @@
 
 	$.fn.replacesvg = function(options){
 		var o = $.extend({
-			defaultSVG: false,
+			defaultsvg: false,
 			dataname: 'altimgsrc',
 			ns: 'http://www.w3.org/2000/svg'
 		}, options),
@@ -27,8 +27,8 @@
 		}()),
 		support = f();
 		if(
-			!support && o.defaultSVG ||
-			support && !o.defaultSVG
+			!support && o.defaultsvg ||
+			support && !o.defaultsvg
 		){
 			return this.each(function(){
 				var dataname = $(this).data(o.dataname);
