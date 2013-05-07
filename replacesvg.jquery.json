@@ -1,0 +1,31 @@
+{
+	"name": "replacesvg",
+	"title": "jquery replacesvg", 
+	"description": "this is a simple svg replacement plugin.",
+	"version": "1.0.0",
+	"keywords": [
+		"svg",
+		"img",
+		"image",
+		"replace",
+		"polyfill",
+		"fallback",
+		"replacement"
+	],
+	"author": {
+		"name": "FiNGAHOLiC",
+		"url": "https://github.com/FiNGAHOLiC"
+	},
+	"licenses": [
+		{
+			"type":"MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+	],
+	"dependencies": {
+		"jquery": ">=1.7"
+	},
+	"docs": "http://fingaholic.github.com/jquery.replacesvg/",
+	"download": "https://github.com/FiNGAHOLiC/jquery.replacesvg/archive/master.zip",
+	"homepage": "https://github.com/FiNGAHOLiC/jquery.replacesvg"
+}
