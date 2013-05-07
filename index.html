@@ -22,15 +22,14 @@
 				<section>
 					<h1>1. Graceful Degradation Mode</h1>
 					<p><img src="./img/star.svg" width="100" height="95" alt="star" data-altimgsrc="./img/star.png" class="js-replacesvg1"></p>
-					<p>If browser support SVG: Do nothing.</p>
-					<p>If browser NOT support SVG: Replace <b class="blue">star.svg</b> with <b class="red">star.png</b>.</p>
+					<p>If browser support SVG, do nothing.<br>If not, replace <b class="blue">star.svg</b> with <b class="red">star.png</b>.</p>
 					<p>
 <pre>&#60;img src="./img/star.svg" width="100" height="95" alt="star" data-altimgsrc="./img/star.png" class="js-replacesvg1"&#62;</pre>
 					</p>
 					<p>
 <pre>
 $('.js-replacesvg1').replacesvg({
-	fallback: true
+	defaultSVG: true
 });
 </pre>
 					</p>
@@ -38,15 +37,14 @@ $('.js-replacesvg1').replacesvg({
 				<section>
 					<h1>2. Progressive Enhancement Mode</h1>
 					<p><img src="./img/star.png" width="100" height="95" alt="star" data-altimgsrc="./img/star.svg" class="js-replacesvg2"></p>
-					<p>If browser support SVG: Replace <b class="red">star.png</b> with <b class="blue">star.svg</b>.</p>
-					<p>If browser NOT support SVG: Do nothing.</p>
+					<p>If browser support SVG, replace <b class="red">star.png</b> with <b class="blue">star.svg</b>.<br>If not, do nothing.</p>
 					<p>
 <pre>&#60;img src="./img/star.png" width="100" height="95" alt="star" data-altimgsrc="./img/star.svg" class="js-replacesvg2"&#62;</pre>
 					</p>
 					<p>
 <pre>
 $('.js-replacesvg2').replacesvg({
-	fallback: false
+	defaultSVG: false
 });
 </pre>
 					</p>
@@ -60,13 +58,13 @@ $('.js-replacesvg2').replacesvg({
 			// Sample 1
 			$(function(){
 				$('.js-replacesvg1').replacesvg({
-					fallback: true
+					defaultSVG: true
 				});
 			});
 			// Sample 2
 			$(function(){
 				$('.js-replacesvg2').replacesvg({
-					fallback: false
+					defaultSVG: false
 				});
 			});
 		</script>
